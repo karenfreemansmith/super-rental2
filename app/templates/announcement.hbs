@@ -1,0 +1,14 @@
+<h1> Announcements </h1>
+
+Look at some announcements that may pertain to your rental area!
+
+<ul>
+  {{#each model as |announcement|}}
+    {{announcement-tile announcement=announcement destroyAnnouncement="destroyAnnouncement"}}
+  {{/each}}
+</ul>
+
+{{new-announcement saveAnnouncement2="saveAnnouncement3"}}
+
+<br>
+{{#link-to 'index'}}Home{{/link-to}}
